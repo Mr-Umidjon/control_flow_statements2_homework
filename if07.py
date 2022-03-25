@@ -13,6 +13,7 @@ def main(temp):
     Returns:
         str: return answer.
     """
+
     if temp < 0:
         return "Freezing"
     elif temp <= 10:

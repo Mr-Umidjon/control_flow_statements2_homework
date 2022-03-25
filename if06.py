@@ -6,19 +6,36 @@ def main(n):
     Returns:
         int: return answer.
     """
-    n = str(n)
+    x1 = n % 10
+    n //= 10
 
-    max_index = 0
-    maximum = n[0]
-    if maximum < n[1]:
-        max_index = 1
-    if maximum < n[2]:
-        max_index = 2
-    if maximum < n[3]:
-        max_index = 3
-    if maximum < n[4]:
-        max_index = 4
-    return max_index+1
+    x2 = n % 10
+    n //= 10
+
+    x3 = n % 10
+    n //= 10
+
+    x4 = n % 10
+    n //= 10
+
+    x5 = n % 10
+    n //= 10
+
+    maximum = x1
+    index = 1
+    if maximum < x2:
+        maximum = x2
+        index = 2
+    if maximum < x3:
+        maximum = x3
+        index = 3
+    if maximum < x4:
+        maximum = x4
+        index = 4
+    if maximum < x5:
+        maximum = x5
+        index = 5
+    return index
 
 
 print(main(16325))

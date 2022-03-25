@@ -28,6 +28,6 @@ def main(n):
         maximum = x3
     elif maximum < x4:
         maximum = x4
-    else:
+    elif maximum < x5:
         maximum = x5
     return maximum

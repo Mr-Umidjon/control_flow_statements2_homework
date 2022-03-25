@@ -6,6 +6,7 @@ def main(n):
     Returns:
         int: return answer.
     """
+
     x1 = n % 10
     n //= 10
 

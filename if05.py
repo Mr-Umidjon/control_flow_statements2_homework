@@ -24,10 +24,10 @@ def main(n):
     maximum = x1
     if maximum < x2:
         maximum = x2
-    elif maximum < x3:
+    if maximum < x3:
         maximum = x3
-    elif maximum < x4:
+    if maximum < x4:
         maximum = x4
-    elif maximum < x5:
+    if maximum < x5:
         maximum = x5
     return maximum

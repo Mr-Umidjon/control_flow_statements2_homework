@@ -6,4 +6,28 @@ def main(n):
     Returns:
         int: return answer.
     """
-    return
+    x1 = n % 10
+    n //= 10
+
+    x2 = n % 10
+    n //= 10
+
+    x3 = n % 10
+    n //= 10
+
+    x4 = n % 10
+    n //= 10
+
+    x5 = n % 10
+    n //= 10
+
+    maximum = x1
+    if maximum < x2:
+        maximum = x2
+    elif maximum < x3:
+        maximum = x3
+    elif maximum < x4:
+        maximum = x4
+    else:
+        maximum = x5
+    return maximum

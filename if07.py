@@ -15,13 +15,13 @@ def main(temp):
     """
     if temp < 0:
         return "Freezing"
-    elif temp < 10:
+    elif temp <= 10:
         return "Cold"
-    elif temp < 20:
+    elif temp <= 20:
         return "Very Cold"
-    elif temp < 30:
+    elif temp <= 30:
         return "Normal"
-    elif temp < 40:
+    elif temp <= 40:
         return "Hot"
-    else:
+    elif temp > 40:
         return "Very Hot"
